@@ -27,6 +27,10 @@ const db = {};
 db.Sequelize = Sequelize;
 db.sequelize = sequelize;
  
-db.Customer = require('../models/customer.model.js')(sequelize, Sequelize);
- 
+//db.Customer = require('../models/customer.model.js')(sequelize, Sequelize);
+db.Usuario = require('../models/usuario.model.js')(sequelize,Sequelize);
+db.Mascota = require('../models/mascota.model.js')(sequelize,Sequelize);
+db.Habitacion = require('../models/habitacion.model.js')(sequelize, Sequelize);
+db.Servicio = require('../models/servicio.model.js')(sequelize,Sequelize);
+
 module.exports = db;

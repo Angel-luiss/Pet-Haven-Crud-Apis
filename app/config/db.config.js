@@ -27,10 +27,17 @@ const db = {};
 db.Sequelize = Sequelize;
 db.sequelize = sequelize;
  
-//db.Customer = require('../models/customer.model.js')(sequelize, Sequelize);
-db.Usuario = require('../models/usuario.model.js')(sequelize,Sequelize);
-db.Mascota = require('../models/mascota.model.js')(sequelize,Sequelize);
-db.Habitacion = require('../models/habitacion.model.js')(sequelize, Sequelize);
-db.Servicio = require('../models/servicio.model.js')(sequelize,Sequelize);
+db.Usuario = require('../models/usuarios.model.js')(sequelize,Sequelize);
+db.Mascota = require('../models/mascotas.model.js')(sequelize,Sequelize);
+db.Habitacion = require('../models/habitaciones.model.js')(sequelize, Sequelize);
+db.Servicio = require('../models/servicios.model.js')(sequelize,Sequelize);
+db.Precio = require('..//models/precios.model.js')(sequelize,Sequelize);
+db.Promocion = require('../models/promociones.model.js')(sequelize,Sequelize);
+db.Reservacion  = require('../models/reservaciones.model.js')(sequelize,Sequelize);
+db.ServicioReservacion = require('../models/servicios_reservacion.model.js')(sequelize,Sequelize);
+db.Pago = require('../models/pagos.model.js')(sequelize, Sequelize);
+db.LogDisponibilidad = require('../models/logs_disponibilidad.model.js')(sequelize,Sequelize);
+db.Inventario = require('../models/inventario.model.js')(sequelize,Sequelize);
+db.Proveedor = require('../models/proveedores.model.js')(sequelize,Sequelize);
 
 module.exports = db;

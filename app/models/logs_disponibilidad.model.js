@@ -20,4 +20,4 @@ module.exports = (sequelize, Sequelize) => {
 	});
 	
 	return LogDisponibilidad;
-}
+} ////comet
